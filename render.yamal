@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: lombard-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: "7694975534:AAHISLJqI94XrekJ6FpP252Z9hhZCG_RJsA"
+    plan: free
